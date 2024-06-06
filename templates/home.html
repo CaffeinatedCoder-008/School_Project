@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+        #container {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome to our Web Applications</h1>
+        <p>Below are brief explanations of each functionality along with links to access them:</p>
+        <ul>
+            <li>
+                <strong><a href="/fibonacci">Fibonacci Series Generator</a>:</strong><br>
+                The Fibonacci Series Generator calculates the Fibonacci series based on the user's input.
+                The Fibonacci series is a sequence of numbers where each number is the sum of the two preceding ones,
+                typically starting with 0 and 1.
+            </li>
+            <li>
+                <strong><a href="/marks">Marks Calculator</a>:</strong><br>
+                The Marks Calculator computes the total and average marks for five subjects.
+                Users can input their marks for each subject, and the calculator will provide the total
+                marks obtained and the average marks.
+            </li>
+            <li>
+                <strong><a href="/circle">Circle Calculator</a>:</strong><br>
+                The Circle Calculator determines the circumference and area of a circle based on the input radius.
+                Users input the radius of the circle, and the calculator will output the circumference
+                and area of the circle using the standard formulas.
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
